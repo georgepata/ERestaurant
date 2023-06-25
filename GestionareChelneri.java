@@ -254,7 +254,6 @@ public class GestionareChelneri extends JPanel {
                     functieTextField.setText("");
                 } else if (starePanel.equals("Delete")){
                     admin.cautareChelner(Integer.parseInt(idTextField.getText()));
-                    admin.displayChelner();
                     file=new File(pathFile);
                     try {
                         fileWriter=new FileWriter(file);

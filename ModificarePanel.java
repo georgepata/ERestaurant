@@ -138,7 +138,6 @@ public class ModificarePanel extends JPanel {
                         break;
                     }
                 }
-            
                 JOptionPane.showMessageDialog(null, "Modificarile au fost salvate!");
                 try {
                     scriereFisier();

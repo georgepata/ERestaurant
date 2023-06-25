@@ -58,7 +58,7 @@ public class ColectieChelneri {
 
 
 
-    public void mutareComanda(String ID, String masa) throws IOException { //ID= table.getSelectedRow;
+    public void mutareComanda(String ID, String masa) throws IOException {
         file=new File("Comenzi.txt");
         fileWriter=new FileWriter(file, true);
         fileWriter.write(masa);
@@ -118,7 +118,6 @@ public class ColectieChelneri {
                 break;
             }
         }
-        afisareComenzi();
     }
 
     public void citireComanda() throws IOException {
@@ -221,20 +220,6 @@ public class ColectieChelneri {
         return number;
     }
 
-    public void afisare() {
-        for (Map.Entry<ArrayList<String>, Integer> entry : chelneri.entrySet()) {
-            ArrayList<String> key = entry.getKey();
-            Integer value = entry.getValue();
-        }
-    }
-
-    public void afisareComenzi(){
-        for (int i=0; i<comenzi.size(); i++){
-            ArrayList<String> through = comenzi.get(i);
-            for (int j=0; j<through.size(); j++){
-            }
-        }
-    }
 
     public ArrayList<ArrayList<String>> getComenzi(){
         return comenzi;

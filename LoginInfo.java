@@ -51,16 +51,7 @@ public class LoginInfo {
             String[] retrievedArray = chelneri.get(number - 1);
             for (int i = 1; i < retrievedArray.length; i++)
                 retrievedArray[i] = array[i - 1];
-            displayChelner();
             JOptionPane.showMessageDialog(null, "Datele angajatului au fost editate!");
-        }
-    }
-    public void displayChelner(){
-        for (String[] z : chelneri) {
-            for (String nm : z) {
-                System.out.print(nm+" ");
-            }
-            System.out.println();
         }
     }
 }

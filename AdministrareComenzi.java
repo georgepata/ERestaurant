@@ -235,7 +235,6 @@ public class AdministrareComenzi extends JPanel {
                             }
                         }
                     }
-                    chelneri.afisare();
                 } catch (Exception e1){
                     JOptionPane.showMessageDialog(null, "Introduceti o valoare corespunzatoare!");
                 }
@@ -271,8 +270,6 @@ public class AdministrareComenzi extends JPanel {
             } catch (IOException ex) {
                 throw new RuntimeException(ex);
             }
-            chelneri.afisare();
-            chelneri.afisareComenzi();
         }
 
         @Override
